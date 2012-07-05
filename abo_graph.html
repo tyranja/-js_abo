@@ -1,0 +1,27 @@
+<!doctype html>
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="https://raw.github.com/DmitryBaranovskiy/raphael/300aa589f5a0ba7fce667cd62c7cdda0bd5ad904/raphael-min.js"></script>
+  <script src="morris.js"></script>
+  <script src="lib/prettify.js"></script>
+  <script src="lib/example.js"></script>
+  <link rel="stylesheet" href="lib/example.css">
+  <link rel="stylesheet" href="lib/prettify.css">
+</head>
+<body>
+<h1>Online Abos</h1>
+<div id="graph"></div>
+<pre id="code" class="prettyprint linenums">
+Morris.Line({
+  element: 'graph',
+  data: [
+  {y: '2011/01', a: 1818},
+  {y: '2011/02', a: 1841},
+  {y: '2011/03', a: 1885},
+  ],
+  xkey: 'y',
+  ykeys: ['a'],
+  labels: ['Online Abos']
+});
+</pre>
+</body>
